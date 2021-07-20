@@ -81,8 +81,35 @@ else if ( pets > allowedPets ){
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
-// 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+let mostPets;
 
+if( pets > friendsPets ){
+    mostPets = pets;
+}
+else if( pets < friendsPets ){
+   mostPets = friendsPets;
+}
+
+console.log( mostPets );
+
+///I didn't quite understand this question, but I tried! I know the answer isn't right because it's undefined.
+
+
+
+// 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+switch( mostPets ){
+    case pets > friendsPets: 
+    mostPets = pets;
+    break; 
+
+    case pets < friendsPets:
+    mostPets = friendsPets;
+    break;
+    
+
+
+}
+    
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-
+mostPets ? pets > friendsPets : pets < friendsPets;
